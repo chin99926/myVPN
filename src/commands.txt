@@ -1,0 +1,5 @@
+D:
+cd KTH\HT18-1 Internet Security and Privacy\VPN-Project\src
+java ForwardServer --handshakehost=localhost --handshakeport=2206 --usercert=server.pem --cacert=ca.pem --key=server-private.der
+java ForwardClient --handshakehost=localhost --handshakeport=2206 --usercert=client.pem --cacert=ca.pem --key=client-private.der --targethost=localhost --targetport=6789
+
